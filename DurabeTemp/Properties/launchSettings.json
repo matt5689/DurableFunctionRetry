@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DurabeTemp": {
+      "commandName": "Project",
+      "commandLineArgs": "start --verbose"
+    }
+  }
+}

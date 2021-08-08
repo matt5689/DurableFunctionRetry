@@ -1,0 +1,29 @@
+{
+  "version": "2.0",
+  "extensions": {
+    "durableTask": {
+      "hubName": "macavall1",
+      "controlQueueBatchSize": 1,
+      "partitionCount": 1,
+      "maxConcurrentActivityFunctions": 1,
+      "maxConcurrentOrchestratorFunctions": 1,
+      "maxQueuePollingInterval": "00:00:01",
+      "traceInputsAndOutputs": true,
+      "logReplayEvents": true
+    }
+  },
+  "logging": {
+    "fileLoggingMode": "always",
+    "console": {
+      "isEnabled": "true"
+    },
+    "logLevel": {
+      "default": "Trace",
+      "Host.Results": "Trace",
+      "Function": "Trace",
+      "Host.Aggregator": "Trace",
+      "DurableTask.AzureStorage": "Trace",
+      "DurableTask.Core": "Trace"
+    }
+  }
+}
